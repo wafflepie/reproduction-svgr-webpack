@@ -3,7 +3,8 @@ import { createElement } from "react";
 
 const importFooAsset = () => import(`foo.js!=!@svgr/webpack!./assets/foo.svg`);
 
-const importDynamicAsset = type => import(`${type}.js!=!@svgr/webpack!./assets/${type}.svg`);
+const importDynamicAsset = (type) =>
+  import(`${type}.js!=!@svgr/webpack!./assets/${type}.svg`);
 
 (async () => {
   const foo = await importFooAsset();
