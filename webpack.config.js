@@ -6,7 +6,7 @@ module.exports = {
     rules: [
       {
         test: /\.svg$/,
-        loader: "url-loader",
+        type: "asset/resource",
       },
     ],
   },
